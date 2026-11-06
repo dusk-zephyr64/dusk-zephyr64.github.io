@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日吃瓜大赛-吃瓜大赛热点合集_每日吃瓜大赛热门话题与网友热议</title>
+<meta name="description" content="每日吃瓜大赛是聚合网络热点瓜料与网友热议的栏目，按时间梳理热门话题、争议焦点与评论区反应，帮助你快速看清每一条吃瓜线索的来龙去脉与讨论走向。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23131a2b'/%3E%3Ccircle cx='32' cy='30' r='16' fill='%23ff5e7e'/%3E%3Cpath d='M16 30h32' stroke='%23131a2b' stroke-width='4'/%3E%3Cpath d='M32 14v32' stroke='%23131a2b' stroke-width='4'/%3E%3Cpath d='M32 46l-6 8m6-8l6 8' stroke='%235eead4' stroke-width='4' fill='none'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#0e1420;
+  --bg2:#141c2c;
+  --card:#1a2336;
+  --line:#2a3550;
+  --txt:#e8edf7;
+  --muted:#9aa8c4;
+  --pink:#ff5e7e;
+  --mint:#5eead4;
+  --gold:#ffcf6b;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--txt);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(14,20,32,.92);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:14px 0;flex-wrap:wrap;
+}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:17px;letter-spacing:.5px}
+.logo svg{width:34px;height:34px;flex:none}
+.logo span{white-space:nowrap}
+.navlinks{display:flex;gap:6px;flex-wrap:wrap;font-size:14px}
+.navlinks a{
+  padding:6px 12px;border-radius:999px;color:var(--muted);
+  transition:.2s;border:1px solid transparent;
+}
+.navlinks a:hover{color:var(--txt);background:var(--card);border-color:var(--line)}
+
+/* hero */
+.hero{
+  position:relative;overflow:hidden;
+  padding:64px 0 56px;
+  background:
+    radial-gradient(700px 300px at 15% 0%,rgba(255,94,126,.18),transparent 70%),
+    radial-gradient(600px 280px at 90% 20%,rgba(94,234,212,.13),transparent 70%),
+    var(--bg);
+  border-bottom:1px solid var(--line);
+}
+.hero-inner{display:grid;grid-template-columns:1.35fr .9fr;gap:40px;align-items:center}
+.tag{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:1px;color:var(--mint);
+  border:1px solid rgba(94,234,212,.35);
+  background:rgba(94,234,212,.07);
+  padding:5px 13px;border-radius:999px;margin-bottom:20px;
+}
+.tag i{width:7px;height:7px;border-radius:50%;background:var(--mint);display:inline-block;animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+h1{
+  font-size:clamp(30px,4.6vw,50px);
+  line-height:1.18;font-weight:900;letter-spacing:1px;
+  background:linear-gradient(100deg,#fff 10%,var(--pink) 55%,var(--gold) 95%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:18px;
+}
+.hero p.lead{color:var(--muted);font-size:15.5px;max-width:560px;margin-bottom:26px}
+.hero p.lead b{color:var(--txt);font-weight:600}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 24px;border-radius:10px;font-size:14.5px;font-weight:600;
+  transition:.2s;border:1px solid transparent;cursor:pointer;
+}
+.btn-main{background:linear-gradient(100deg,var(--pink),#ff8763);color:#1a0a10;box-shadow:0 8px 24px -8px rgba(255,94,126,.6)}
+.btn-main:hover{transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--txt);background:var(--bg2)}
+.btn-ghost:hover{border-color:var(--pink);color:var(--pink)}
+
+/* hero visual */
+.melon-card{
+  background:linear-gradient(160deg,var(--card),#151d2e);
+  border:1px solid var(--line);border-radius:20px;
+  padding:26px;position:relative;overflow:hidden;
+}
+.melon-card::after{
+  content:"";position:absolute;right:-40px;top:-40px;width:150px;height:150px;
+  background:radial-gradient(circle,rgba(255,94,126,.35),transparent 70%);border-radius:50%;
+}
+.melon-card h3{font-size:14px;color:var(--muted);font-weight:500;margin-bottom:16px;letter-spacing:1px}
+.melon-card svg{width:100%;height:auto;display:block;margin-bottom:18px}
+.melon-meta{display:flex;justify-content:space-between;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:14px}
+.melon-meta b{color:var(--gold);font-weight:600}
+
+/* section base */
+section{padding:56px 0}
+.sec-head{margin-bottom:30px}
+.sec-head .kicker{font-size:12.5px;color:var(--pink);letter-spacing:2px;font-weight:600;margin-bottom:8px}
+.sec-head h2{font-size:clamp(21px,2.8vw,28px);font-weight:800;letter-spacing:.5px}
+.sec-head p{color:var(--muted);font-size:14.5px;margin-top:8px;max-width:720px}
+
+/* today list */
+.today{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.list{display:flex;flex-direction:column;gap:12px}
+.item{
+  display:grid;grid-template-columns:64px 1fr auto;gap:18px;align-items:center;
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:16px 20px;transition:.2s;
+}
+.item:hover{border-color:rgba(255,94,126,.5);transform:translateX(4px)}
+.rank{
+  font-size:22px;font-weight:900;font-style:italic;
+  color:var(--line);text-align:center;letter-spacing:-1px;
+}
+.item:nth-child(1) .rank{color:var(--pink)}
+.item:nth-child(2) .rank{color:var(--gold)}
+.item:nth-child(3) .rank{color:var(--mint)}
+.item h4{font-size:15.5px;font-weight:700;margin-bottom:4px}
+.item p{font-size:13px;color:var(--muted);line-height:1.6}
+.hot{
+  font-size:12px;color:var(--muted);white-space:nowrap;
+  border:1px solid var(--line);padding:3px 10px;border-radius:999px;
+}
+.hot.hi{color:var(--pink);border-color:rgba(255,94,126,.4);background:rgba(255,94,126,.08)}
+
+/* grids */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:16px;
+  padding:26px;transition:.25s;display:flex;flex-direction:column;gap:12px;
+}
+.card:hover{transform:translateY(-4px);border-color:rgba(94,234,212,.4)}
+.card .ico{
+  width:44px;height:44px;border-radius:12px;display:grid;place-items:center;
+  background:rgba(255,94,126,.12);border:1px solid rgba(255,94,126,.25);
+}
+.card .ico svg{width:22px;height:22px}
+.card h3{font-size:16.5px;font-weight:700}
+.card p{font-size:13.8px;color:var(--muted);line-height:1.8}
+
+/* article / reading */
+.read{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.read-body{max-width:800px}
+.read-body h2{font-size:23px;font-weight:800;margin-bottom:16px}
+.read-body p{font-size:15px;color:#c3cee2;margin-bottom:14px}
+.read-body p b{color:var(--mint);font-weight:600}
+.note{
+  border-left:3px solid var(--pink);background:rgba(255,94,126,.06);
+  padding:14px 18px;border-radius:0 10px 10px 0;font-size:14px;color:#c3cee2;margin-top:6px;
+}
+
+/* filter */
+.filter-bar{
+  display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  margin-bottom:24px;padding:16px 18px;background:var(--card);
+  border:1px solid var(--line);border-radius:14px;
+}
+.filter-bar input{
+  flex:1;min-width:180px;background:var(--bg);border:1px solid var(--line);
+  border-radius:9px;padding:10px 14px;color:var(--txt);font-size:14px;outline:none;
+  font-family:inherit;
+}
+.filter-bar input:focus{border-color:var(--pink)}
+.chip{
+  padding:7px 16px;border-radius:999px;font-size:13px;cursor:pointer;
+  border:1px solid var(--line);background:var(--bg);color:var(--muted);transition:.2s;
+  font-family:inherit;
+}
+.chip:hover{color:var(--txt)}
+.chip.on{background:rgba(255,94,126,.15);border-color:var(--pink);color:var(--pink);font-weight:600}
+.mini{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.mini-card{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;
+  transition:.2s;
+}
+.mini-card:hover{border-color:rgba(94,234,212,.4)}
+.mini-card .m-tag{font-size:11.5px;color:var(--mint);letter-spacing:1px;margin-bottom:6px}
+.mini-card h4{font-size:14.5px;font-weight:700;margin-bottom:5px}
+.mini-card p{font-size:13px;color:var(--muted)}
+.empty{color:var(--muted);font-size:14px;padding:20px 4px;display:none}
+
+/* download */
+.dl{
+  background:linear-gradient(120deg,#1c2740,#151d2e);
+  border:1px solid var(--line);border-radius:20px;
+  padding:36px;display:flex;justify-content:space-between;align-items:center;
+  gap:24px;flex-wrap:wrap;
+}
+.dl h2{font-size:22px;font-weight:800;margin-bottom:8px}
+.dl p{color:var(--muted);font-size:14px;max-width:520px}
+.btn-dl{
+  background:var(--card);border:1px solid var(--line);color:var(--txt);
+  padding:12px 30px;border-radius:10px;font-size:14.5px;font-weight:600;
+  display:inline-flex;align-items:center;gap:8px;
+}
+.btn-dl[aria-disabled="true"]{color:var(--muted);pointer-events:none}
+
+/* footer */
+footer{
+  border-top:1px solid var(--line);padding:36px 0 40px;
+  background:var(--bg);font-size:13px;color:var(--muted);
+}
+.f-top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:20px}
+.f-top .logo{font-size:15px;margin-bottom:8px}
+.f-top p{max-width:420px;line-height:1.8}
+.f-links{display:flex;gap:20px;flex-wrap:wrap}
+.f-links a:hover{color:var(--pink)}
+.copy{border-top:1px dashed var(--line);padding-top:16px;font-size:12.5px}
+
+@media (max-width:860px){
+  .hero-inner{grid-template-columns:1fr;gap:28px}
+  .melon-card{order:2}
+  .grid3{grid-template-columns:1fr}
+  .item{grid-template-columns:44px 1fr;gap:12px}
+  .item .hot{grid-column:2;justify-self:start}
+  .mini{grid-template-columns:1fr}
+  .navlinks{gap:2px;font-size:13px}
+  .navlinks a{padding:5px 9px}
+  section{padding:44px 0}
+  .dl{padding:26px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="每日吃瓜大赛首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="15" fill="#1a2336"/>
+        <circle cx="32" cy="30" r="16" fill="#ff5e7e"/>
+        <path d="M16 30h32" stroke="#131a2b" stroke-width="4"/>
+        <path d="M32 14v32" stroke="#131a2b" stroke-width="4"/>
+        <path d="M32 46l-6 8m6-8l6 8" stroke="#5eead4" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>每日吃瓜大赛</span>
+    </a>
+    <nav class="navlinks" aria-label="主导航">
+      <a href="#today">今日热榜</a>
+      <a href="#board">瓜田分区</a>
+      <a href="#read">怎么吃瓜</a>
+      <a href="#explore">瓜料检索</a>
+      <a href="#dl">栏目下载</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="tag"><i></i>网络热点 · 每日更新</span>
+        <h1>每日吃瓜大赛</h1>
+        <p class="lead">这里是围绕网络热点展开的<b>每日吃瓜大赛</b>栏目：把一天里被反复讨论的瓜料收集起来，按时间与讨论热度排成榜单，标出争议焦点、评论区走向和仍待确认的部分，让围观有据可依，而不是只看到一句转述。</p>
+        <div class="btns">
+          <a class="btn btn-main" href="#today">进入今日热榜
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#read">先看吃瓜方法</a>
+        </div>
+      </div>
+      <aside class="melon-card" aria-label="今日围观概况">
+        <h3>今日围观概况</h3>
+        <svg viewBox="0 0 260 130" role="img" aria-label="瓜田围观示意插画">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ff5e7e"/><stop offset="1" stop-color="#ff8763"/>
+            </linearGradient>
+          </defs>
+          <circle cx="70" cy="62" r="40" fill="url(#g1)" opacity=".95"/>
+          <path d="M30 62h80" stroke="#0e1420" stroke-width="7"/>
+          <path d="M70 22v80" stroke="#0e1420" stroke-width="7"/>
+          <circle cx="70" cy="62" r="40" fill="none" stroke="#0e1420" stroke-width="4" opacity=".35"/>
+          <g fill="#5eead4">
+            <circle cx="160" cy="46" r="5"/><circle cx="186" cy="46" r="5"/><circle cx="212" cy="46" r="5"/>
+            <circle cx="160" cy="72" r="5"/><circle cx="186" cy="72" r="5"/><circle cx="212" cy="72" r="5"/>
+          </g>
+          <path d="M150 100h86" stroke="#2a3550" stroke-width="3" stroke-dasharray="6 6"/>
+        </svg>
+        <div class="melon-meta">
+          <span>今日收录 <b>12</b> 条</span>
+          <span>热议焦点 <b>3</b> 个</span>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- 今日热榜 -->
+  <section id="today" class="today">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">TODAY RANKING</div>
+        <h2>今日热榜：正在被讨论的瓜</h2>
+        <p>榜单按讨论量从高到低排列。每条都写清三件事：事情起于哪里、目前说到哪一步、哪部分还没有明确说法。</p>
+      </div>
+      <div class="list">
+        <article class="item">
+          <div class="rank">01</div>
+          <div>
+            <h4>某剧组的选角传闻被多方转述</h4>
+            <p>消息从一张聊天截图开始，随后被不同账号加上了各自的解读。目前只有部分当事人侧面回应，最终名单尚无官方发布。</p>
+          </div>
+          <span class="hot hi">讨论量最高</span>
+        </article>
+        <article class="item">
+          <div class="rank">02</div>
+          <div>
+            <h4>老牌品牌联名活动引发口味争议</h4>
+            <p>联名产品上线后被评价两极，支持者看重创意，质疑者集中在定价与产能。品牌方已就发货节奏给出说明。</p>
+          </div>
+          <span class="hot hi">评论分化</span>
+        </article>
+        <article class="item">
+          <div class="rank">03</div>
+          <div>
+            <h4>一段采访片段被重新剪出传播</h4>
+            <p>原视频与二次剪辑在上下文上有明显差别，完整版本放出后讨论重心从指责转向了对剪辑方式的讨论。</p>
+          </div>
+          <span class="hot">已补充原片</span>
+        </article>
+        <article class="item">
+          <div class="rank">04</div>
+          <div>
+            <h4>某综艺录制路透引发嘉宾阵容猜测</h4>
+            <p>现场照片信息有限，嘉宾身份多为网友比对推断，节目组尚未公布名单，相关讨论仍停留在猜测阶段。</p>
+          </div>
+          <span class="hot">待确认</span>
+        </article>
+        <article class="item">
+          <div class="rank">05</div>
+          <div>
+            <h4>社交平台热传的一段生活记录</h4>
+            <p>内容因细节真实获得大量转发，但拍摄时间与地点未获证实，评论区已出现不同版本的解读。</p>
+          </div>
+          <span class="hot">真实性待核</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 瓜田分区 -->
+  <section id="board">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">CATEGORIES</div>
+        <h2>瓜田分区：按类型找线索</h2>
+        <p>每日吃瓜大赛把瓜料分成几类，不同类型关注点不同。看影视瓜盯官方通告，看品牌瓜盯售后与产能，看片段瓜先找原视频。</p>
+      </div>
+      <div class="grid3">
+        <article class="card">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ff5e7e" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M8 5v14M16 5v14M2 12h20"/></svg>
+          </div>
+          <h3>影视综艺瓜</h3>
+          <p>集中在选角、路透、剪辑与播出调整。判断这类瓜，优先看制作方与平台的正式公告，其次是可核实的现场物料，最后才是转述截图。</p>
+        </article>
+        <article class="card">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#5eead4" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h16l-2 12H6L4 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          </div>
+          <h3>品牌消费瓜</h3>
+          <p>联名、定价、发货、售后是常见焦点。这类讨论往往有清晰的时间线，客服回复与官方声明可以作为事实锚点，情绪化评价则需分开看。</p>
+        </article>
+        <article class="card">
+          <div class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffcf6b" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg>
+          </div>
+          <h3>片段与剪辑瓜</h3>
+          <p>最容易被误传的一类。遇到短片段，先找完整视频与原始发布账号；如果只剩截图，就把它标注为待核实，而不是当成结论继续转。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 怎么吃瓜 -->
+  <section id="read" class="read">
+    <div class="wrap read-body">
+      <div class="sec-head" style="margin-bottom:22px">
+        <div class="kicker">HOW TO FOLLOW</div>
+        <h2>在每日吃瓜大赛里，怎样把一条瓜看清</h2>
+      </div>
+      <p>围观不是把转述再转一遍。<b>每日吃瓜大赛</b>整理每条瓜料时，习惯先回到源头：最早的发布者是谁、发布时间是几点、原文有没有被截断。很多争议其实在源头就能看出分歧点。</p>
+      <p>第二步是分清<b>事实与评价</b>。官方的公告、平台的规则、当事方的公开回应属于可引用信息；网友的推断、情绪表达和二次创作属于讨论氛围，两者放在一起看，但不能混为一谈。榜单里标注“待确认”的条目，就是目前还只有后者。</p>
+      <p>第三步是看讨论的变化。一条瓜从爆发到平息，焦点常常会转移：开头争的是真假，后面争的是态度，最后争的是处理方式。把这些变化记录下来，比记住某一句话更有用。</p>
+      <div class="note">提醒：涉及个人隐私、未经证实的指控和未成年人信息，不列入每日吃瓜大赛的收录范围。围观有边界，转发需谨慎。</div>
+    </div>
+  </section>
+
+  <!-- 瓜料检索 -->
+  <section id="explore">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="kicker">SEARCH</div>
+        <h2>瓜料检索：按分类翻旧瓜</h2>
+        <p>输入关键词或选择分类，快速定位往期条目。所有条目内容直接呈现在本页，不跳转外部页面。</p>
+      </div>
+      <div class="filter-bar">
+        <input type="search" id="q" placeholder="搜索瓜料关键词，如：选角、联名、剪辑" aria-label="搜索瓜料关键词">
+        <button class="chip on" data-cat="all" type="button">全部</button>
+        <button class="chip" data-cat="影视" type="button">影视综艺</button>
+        <button class="chip" data-cat="品牌" type="button">品牌消费</button>
+        <button class="chip" data-cat="片段" type="button">片段剪辑</button>
+      </div>
+      <div class="mini" id="miniList">
+        <article class="mini-card" data-cat="影视">
+          <div class="m-tag">影视综艺</div>
+          <h4>选角传闻的时间线</h4>
+          <p>从截图流出到侧面回应，共经历三个传播节点，官方名单仍未公布。</p>
+        </article>
+        <article class="mini-card" data-cat="品牌">
+          <div class="m-tag">品牌消费</div>
+          <h4>联名定价的争议点</h4>
+          <p>争议集中在定价与产能，品牌方已说明发货节奏，售后方案待补充。</p>
+        </article>
+        <article class="mini-card" data-cat="片段">
+          <div class="m-tag">片段剪辑</div>
+          <h4>采访原片与二创对比</h4>
+          <p>完整版本放出后，讨论重心转向剪辑方式，原视频上下文成为关键。</p>
+        </article>
+        <article class="mini-card" data-cat="影视">
+          <div class="m-tag">影视综艺</div>
+          <h4>综艺路透的阵容猜测</h4>
+          <p>现场照片信息有限，嘉宾身份多为网友比对推断，尚无官方名单。</p>
+        </article>
+        <article class="mini-card" data-cat="片段">
+          <div class="m-tag">片段剪辑</div>
+          <h4>生活记录的真实性讨论</h4>
+          <p>拍摄时间与地点未获证实，评论区出现多个版本解读，暂列待核。</p>
+        </article>
+        <article class="mini-card" data-cat="品牌">
+          <div class="m-tag">品牌消费</div>
+          <h4>活动规则的公开说明</h4>
+          <p>参与门槛与兑换方式以官方页面为准，转述版本存在细节出入。</p>
+        </article>
+      </div>
+      <p class="empty" id="empty">没有匹配的条目，换个关键词试试。</p>
+    </div>
+  </section>
+
+  <!-- 下载 -->
+  <section id="dl">
+    <div class="wrap">
+      <div class="dl">
+        <div>
+          <h2>订阅每日吃瓜大赛热榜</h2>
+          <p>把每日收录的热点榜单与讨论走向打包成一份可保存的清单，方便离线回看与对照。当前版本正在整理中，开放后可直接获取。</p>
+        </div>
+        <a class="btn-dl" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 11l5 5 5-5M4 20h16"/></svg>
+          下载
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <div>
+        <div class="logo" style="display:flex;align-items:center;gap:8px">
+          <svg viewBox="0 0 64 64" width="26" height="26" aria-hidden="true">
+            <rect width="64" height="64" rx="15" fill="#1a2336"/>
+            <circle cx="32" cy="30" r="16" fill="#ff5e7e"/>
+            <path d="M16 30h32" stroke="#131a2b" stroke-width="4"/>
+            <path d="M32 14v32" stroke="#131a2b" stroke-width="4"/>
+            <path d="M32 46l-6 8m6-8l6 8" stroke="#5eead4" stroke-width="4" fill="none" stroke-linecap="round"/>
+          </svg>
+          <span>每日吃瓜大赛</span>
+        </div>
+        <p>每日吃瓜大赛是一个聚焦网络热点讨论的围观栏目，梳理话题源头、争议焦点与讨论变化，帮助读者在信息碎片里看清脉络。</p>
+      </div>
+      <div class="f-links">
+        <a href="#today">今日热榜</a>
+        <a href="#board">瓜田分区</a>
+        <a href="#read">怎么吃瓜</a>
+        <a href="#explore">瓜料检索</a>
+      </div>
+    </div>
+    <div class="copy">© 每日吃瓜大赛 · 内容以公开讨论整理为主，未经证实的信息均标注状态，不构成事实结论。</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input=document.getElementById('q');
+  var chips=Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var cards=Array.prototype.slice.call(document.querySelectorAll('#miniList .mini-card'));
+  var empty=document.getElementById('empty');
+  var cat='all';
+
+  function apply(){
+    var kw=input.value.trim().toLowerCase();
+    var shown=0;
+    cards.forEach(function(c){
+      var okCat = cat==='all' || c.getAttribute('data-cat')===cat;
+      var text=(c.textContent||'').toLowerCase();
+      var okKw = !kw || text.indexOf(kw)>-1;
+      var show = okCat && okKw;
+      c.style.display = show ? '' : 'none';
+      if(show) shown++;
+    });
+    empty.style.display = shown ? 'none' : 'block';
+  }
+
+  input.addEventListener('input',apply);
+  chips.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      chips.forEach(function(b){b.classList.remove('on')});
+      btn.classList.add('on');
+      cat=btn.getAttribute('data-cat');
+      apply();
+    });
+  });
+})();
+</script>
+
+</body>
+  </html>
